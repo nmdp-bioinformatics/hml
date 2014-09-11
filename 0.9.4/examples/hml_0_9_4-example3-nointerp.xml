@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- NOTE: This is a brief example of a DRAFT version of HML in action. It is not intended to be an accurate genotyping result. -->
+
+<hml xmlns="http://schemas.nmdp.org/spec/hla/hml/0.9.4" 
+     xmlns:hml="http://schemas.nmdp.org/spec/hla/hml/0.9.4" 
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xsi:schemaLocation="http://schemas.nmdp.org/spec/hla/hml/0.9.4 http://schemas.nmdp.org/spec/hla/hml/0.9.4/hml-0.9.4.xsd"
+     project-name="LAB"
+     reporting-center="789"
+     version="0.9.4">
+    <sample center-code="010" id="140008999">
+        <typing gene-family="HLA">
+            <interpretation date="2014-04-01">
+                <haploid locus="HLA-A" method="DNA" type="0000"/>
+                <haploid locus="HLA-A" method="DNA" type="0000"/>
+                <haploid locus="HLA-B" method="DNA" type="0000"/>
+                <haploid locus="HLA-B" method="DNA" type="0000"/>
+                <haploid locus="HLA-C" method="DNA" type="0000"/>
+                <haploid locus="HLA-C" method="DNA" type="0000"/>
+            </interpretation>
+        </typing>
+    </sample>
+    <sample center-code="072" id="140009888">
+        <typing gene-family="HLA">
+            <interpretation date="2014-04-01">
+                <haploid locus="HLA-A" method="DNA" type="0000"/>
+                <haploid locus="HLA-A" method="DNA" type="0000"/>
+                <haploid locus="HLA-B" method="DNA" type="0000"/>
+                <haploid locus="HLA-B" method="DNA" type="0000"/>
+                <haploid locus="HLA-C" method="DNA" type="0000"/>
+                <haploid locus="HLA-C" method="DNA" type="0000"/>
+            </interpretation>
+        </typing>
+    </sample>
+    <sample center-code="123" id="141236789">
+        <typing gene-family="HLA">
+            <interpretation date="2014-04-01">
+                <haploid locus="HLA-A" method="DNA" type="0000"/>
+                <haploid locus="HLA-A" method="DNA" type="0000"/>
+                <haploid locus="HLA-B" method="DNA" type="0000"/>
+                <haploid locus="HLA-B" method="DNA" type="0000"/>
+                <haploid locus="HLA-C" method="DNA" type="0000"/>
+                <haploid locus="HLA-C" method="DNA" type="0000"/>
+            </interpretation>
+        </typing>
+    </sample>
+</hml>
+
