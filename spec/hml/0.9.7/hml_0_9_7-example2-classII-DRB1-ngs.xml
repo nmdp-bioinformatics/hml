@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Histoimmunogenetics Markup Language (HML)
+    Copyright (c) 2014 National Marrow Donor Program (NMDP)
+
+    This specification is free software; you can redistribute it and/or modify it
+    under the terms of the GNU Lesser General Public License as published
+    by the Free Software Foundation; either version 3 of the License, or (at
+    your option) any later version.
+
+    This specification is distributed in the hope that it will be useful, but WITHOUT
+    ANY WARRANTY; with out even the implied warranty of MERCHANTABILITY or
+    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public
+    License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with this specification;  if not, write to the Free Software Foundation,
+    Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA.
+
+    > http://www.gnu.org/licenses/lgpl.html
+
+-->
+
+<!-- NOTE: This is a brief example of a DRAFT version of HML in action. It is not intended to be an accurate genotyping result. -->
+
+<hml xmlns="http://schemas.nmdp.org/spec/hml/0.9.7" 
+     xmlns:hml="http://schemas.nmdp.org/spec/hml/0.9.7" 
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xsi:schemaLocation="http://schemas.nmdp.org/spec/hml/0.9.7  http://schemas.nmdp.org/spec/hml/0.9.7/hml-0.9.7.xsd"
+     reporting-center="789"
+     project-name="LAB"
+     version="0.9.7">
+  <sample id="120000089" center-code="123">
+    <collection-method>buccal swab</collection-method>
+    <typing gene-family="HLA" date="2014-10-31"><!-- nomenclature="IMGT/HLA Database 3.14.0" -->
+      <sbt-ngs locus="HLA-DRB1" test-id="GTR000000000.0" test-id-source="NCBI-GTR">
+        <consensus-sequence>
+          <region
+              assembly="GRCh38"
+              contig="6"
+              start="32584109"
+              end="32584377"
+              strand="-1"
+              id="ENSE00001731226"
+              description="HLA-DRB1 exon 2"/>
+          <sequence alphabet="DNA" phasing-group="1">
+            TTTCTTGGAGCAGGTTAAACATGAGTGTCATTTCTTCAACGGGACGGAGCGGGTGCGGTTCCTGGACA
+            GATACTTCTATCACCAAGAGGAGTACGTGCGCTTCGACAGCGACGTGGGGGAGTACCGGGCGGTGACG
+            GAGCTGGGGCGGCCTAGCGCCGAGTACTGGAACAGCCAGAAGGACCTCCTGGAGCAGAGGCGGGCCGA
+            GGTGGACACCTACTGCAGACACAACTACGGGGTTGTGGAGAGCTTCACA
+          </sequence>
+          <sequence alphabet="DNA" phasing-group="2">
+            TTTCTTGGAGCAGGTTAAACATGAGTGTCATTTCTTCAACGGGACGGAGCGGGTGCGGTTCCTGGACA
+            GATACTTCTATCACCAAGAGGAGTACGTGCGCTTCGACAGCGACGTGGGGGAGTACCGGGCGGTGACG
+            GAGCTGGGGCGGCCTGATGCCGAGTACTGGAACAGCCAGAAGGACCTCCTGGAGCAGAGGCGGGCCGA
+            GGTGGACACCTACTGCAGACACAACTACGGGGTTGGTGAGAGCTTCACA
+          </sequence>
+          <sequence alphabet="DNA" phasing-group="1">
+            TTTCTTGGAGCAGGTTAAACATGAGTGTCATTTCTTCAACGGGACGGAGCGGGTGCGGTTCCTGGACA
+            GATACTTCTATCACCAAGAGGAGTACGTGCGCTTCGACAGCGACGTGGGGGAGTACCGGGCGGTGACG
+            GAGCTGGGGCGGCCTAGCGCCGAGTACTGGAACAGCCAGAAGGACCTCCTGGAGCAGAGGCGGGCCGA
+            GGTGGACACCTACTGCAGACACAACTACGGGGTTGTGGAGAGCTTCACA
+          </sequence>
+          <sequence alphabet="DNA" phasing-group="2">
+            TTTCTTGGAGCAGGTTAAACATGAGTGTCATTTCTTCAACGGGACGGAGCGGGTGCGGTTCCTGGACA
+            GATACTTCTATCACCAAGAGGAGTACGTGCGCTTCGACAGCGACGTGGGGGAGTACCGGGCGGTGACG
+            GAGCTGGGGCGGCCTGATGCCGAGTACTGGAACAGCCAGAAGGACCTCCTGGAGCAGAGGCGGGCCGA
+            GGTGGACACCTACTGCAGACACAACTACGGGGTTGGTGAGAGCTTCACA
+          </sequence>
+        </consensus-sequence>
+      </sbt-ngs>
+      <interpretation date="2014-01-01" allele-db="IMGT/HLA" allele-version="3.14.0">
+        <!-- 
+          EITHER a single glstring element with a URI -OR- a single glstring 
+          element containing inline data are expected here.
+        -->
+
+        <!-- glstring using inline data: -->
+        <glstring>
+          HLA-DRB1*04:11:01+HLA-DRB1*04:07:01/HLA-DRB1*04:92
+        </glstring>
+
+        <!-- glstring using a URI reference: -->
+        <glstring uri="http://gl.immunogenomics.org/imgt-hla/3.14.0/genotype-list/e" />
+      </interpretation>
+    </typing>
+  </sample>
+</hml>
