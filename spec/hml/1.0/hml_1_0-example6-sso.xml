@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+
+    hml  Histoimmunogenetics Markup Language (HML)
+    Copyright (c) 2014 National Marrow Donor Program (NMDP)
+
+    This specification is free software; you can redistribute it and/or modify it
+    under the terms of the GNU Lesser General Public License as published
+    by the Free Software Foundation; either version 3 of the License, or (at
+    your option) any later version.
+
+    This specification is distributed in the hope that it will be useful, but WITHOUT
+    ANY WARRANTY; with out even the implied warranty of MERCHANTABILITY or
+    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public
+    License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with this specification;  if not, write to the Free Software Foundation,
+    Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA.
+
+    > http://www.gnu.org/licenses/lgpl.html
+
+-->
+
+<!-- NOTE: This is a brief example of a DRAFT version of HML in action. It is not intended to be an accurate genotyping result. -->
+
+<hml xmlns="http://schemas.nmdp.org/spec/hml/1.0" 
+     xmlns:hml="http://schemas.nmdp.org/spec/hml/1.0" 
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xsi:schemaLocation="http://schemas.nmdp.org/spec/hml/1.0  http://schemas.nmdp.org/spec/hml/1.0/hml-1.0.xsd" 
+     project-name="LAB" 
+     version="1.0">
+  <reporting-center reporting-center-id="789" reporting-center-context="NMDP" />
+  <?X-NMDP-NOREPORTS?>
+  <sample center-code="123" id="135724689">
+    <collection-method>buccal swab</collection-method>
+    <typing gene-family="HLA" date="2014-03-29">
+      <allele-assignment date="2014-03-30" allele-db="IMGT/HLA" allele-version="3.15.0">
+          <haploid locus="HLA-DPA1" method="DNA" type="01:02"/>
+          <haploid locus="HLA-DPB1" method="DNA" type="11:01"/>
+      </allele-assignment> 
+      <typing-method>
+        <sso test-id="RSSO2P_005N_02" test-id-source="NMDP" scores="1111111811818811111811111111111818111181188181111181118118118811111111111188111181111111111881111111" />
+      </typing-method>
+    </typing>
+  </sample>
+  <typing-test-names test-id="RSSO2P_005N_02">
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP01"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP02"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP03"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP04"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP05"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP06"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP07"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP08"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP09"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP10"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP11"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP12"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP13"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP14"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP15"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP16"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP17"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP18"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP22"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP27"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP63"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP30"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP31C"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP29"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP19"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP20"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPT100"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP23"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP133"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPT101"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP73GC"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP96"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP33G"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_OLR4082LT_2P"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_OLR4105"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP34"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP35"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPT103C"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP32"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP44G"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP50G"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP51"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP52G"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP53"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA41GC"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP65"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP69"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP72GC"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP70"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP71"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA30"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP76GC"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP68"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA1"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA2"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA3C"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA4"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA5"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA8"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA11"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA12"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA13"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA17"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA18"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA19"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP77"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA21"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA22C"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP113"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA24GC"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA25"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA26"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP114"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA34"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA35"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP115"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP62"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP78"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP79"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP81C"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP82G"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA32"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP83G"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP84G"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP85G"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP86G"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP87G"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA42C"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP89G"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP90GC"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP91"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP92G"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP93C"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP108C"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP109G"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP112GC"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP126C"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP118"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DP119C"/>
+    <typing-test-name name="L5001.K1.V1.RSSO2P_005N_DPA37GC"/>
+  </typing-test-names>
+</hml>
