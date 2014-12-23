@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    Histoimmunogenetics Markup Language (HML)
+    Copyright (c) 2014 National Marrow Donor Program (NMDP)
+
+    This specification is free software; you can redistribute it and/or modify it
+    under the terms of the GNU Lesser General Public License as published
+    by the Free Software Foundation; either version 3 of the License, or (at
+    your option) any later version.
+
+    This specification is distributed in the hope that it will be useful, but WITHOUT
+    ANY WARRANTY; with out even the implied warranty of MERCHANTABILITY or
+    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public
+    License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with this specification;  if not, write to the Free Software Foundation,
+    Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA.
+
+    > http://www.gnu.org/licenses/lgpl.html
+
+-->
+
+<!-- NOTE: This is a brief example of a DRAFT version of HML in action. It is not intended to be an accurate genotyping result. -->
+
+<hml xmlns="http://schemas.nmdp.org/spec/hml/1.0" 
+     xmlns:hml="http://schemas.nmdp.org/spec/hml/1.0" 
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xsi:schemaLocation="http://schemas.nmdp.org/spec/hml/1.0  http://schemas.nmdp.org/spec/hml/1.0/hml-1.0.xsd" 
+     project-name="ABDR" 
+     version="1.0">
+  <reporting-center reporting-center-id="789" reporting-center-context="NMDP" />
+  <sample id="123000789" center-code="099">
+    <collection-method>buccal swab</collection-method>
+    <typing gene-family="HLA" date="2013-11-22">
+      <allele-assignment date="2013-11-25" allele-db="IMGT/HLA" allele-version="3.14.0">
+          <haploid locus="HLA-A" method="DNA" type="24:PDVJ"/>
+          <haploid locus="HLA-A" method="DNA" type="29:SJA"/>
+          <haploid locus="HLA-B" method="DNA" type="35:02:01"/>
+          <haploid locus="HLA-B" method="DNA" type="51:CVAE"/>
+          <haploid locus="HLA-C" method="DNA" type="01:BYXF"/>
+          <haploid locus="HLA-C" method="DNA" type="04:NZEG"/>
+      </allele-assignment>
+      <typing-method>
+        <sbt-sanger locus="HLA-A">
+          <amplification registered-name="L999.K1.V1.AGENERIC">
+                GCTCCCACTCC
+                CGGGGAGCCCCGCTTCATCGCCGTGGGCTACGTGGACGACACGCAGTTCGTGCGGTTYGACAGC
+                GACGCCGCGAGCCAGAGGATGGAGCCGCGGGCRCCGTGGATAGAGCAGGAGGGGCCGGAGTATT
+                GGGACSWGSAGACASGGAAWGTGAAGGCCCASTCACAGACTGACCGAGMGAACCTGSGGAYCSY
+                GCKCSGCTACTACAACCAGAGCGAGGCCGGTTCTCACACCMTCCAGATGATGTWTGGCTGCGAC
+                GTGGGGTCGGACGGGCGCTTCCTCCGCGGGTACCRSCAGKACGCCTACGACGGCAAGGATTACA
+                TCGCCYTGAAMGAGGACCTGCGCTCTTGGACCGCGGCGGACATGGCGGCTCAGATCACCMAGCG
+                GGGAGGCGGCCCRTGTGGCGGAGCAGYWGAGAGCCTACCTGGAGGGCACGTGCGTGGASKGGCT
+                CCGCAGATACCTGGAGAACGGGAAGGAGACGCTGCAGCGCACGGCAAGTATGAGGTATTTCWCC
+                ACATCCGTGTCCCGGCCCGGCCG
+          </amplification>
+        </sbt-sanger>
+        <sbt-sanger locus="HLA-A">
+          <amplification registered-name="L999.K1.V1.A69">
+                GCTCCCACTCCATGAG
+                AGCCCCGCTTCATCGCCGTGGGCTACGTGGACGACACGCAGTTCGTGCGGTTCGACAGCGACGC
+                CGCGAGCCAGAGGATGGAGCCGCGGGCGCCGTGGATAGAGCAGGAGGGGCCGGAGTATTGGGAC
+                GAGGAGACAGGGAAAGTGAAGGCCCACTCACAGACTGACCGAGAGAACCTGCGGATCGCGCTCC
+                GCTACTACAACCAGAGCGAGGCCGGTTCTCACACCCTCCAGATGATGTTTGGCTGCGACGTGGG
+                GTCGGACGGGCGCTTCCTCCGCGGGTACCACCAGTACGCCTACGACGGCAAGGATTACATCGCC
+                CTGAAAGAGGACCTGCGCTCTTGGACCGCGGCGGACATGGCGGCTCAGATCACCAAGCGCAAGT
+                GGGAGGCGGCCCATGTGGCGGAGCAGCAGAGAGCCTACCTGGAGGGCACGTGCGTGGACGGGCT
+                CCGCAGATACCTGGAGAACGGGAAGGAGACGCTGCAGCGCACGGCGGGGGTATTTCTCCACATC
+                CGTGTCCCGGCCCGGCCG
+          </amplification>
+        </sbt-sanger>
+        <sbt-sanger locus="HLA-B">
+          <amplification registered-name="L999.K1.V1.BGENERIC">
+                GCTCCCACTCC
+                AGCCCCGCTTCATYGCAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGC
+                CGCGAGTCCGAGGACGGAGCCCCGGGCGCCATGGATAGAGCAGGAGGGGCCGGAGTATTGGGAC
+                CGGAACACACAGATCTTCAAGACCAACACACAGACTTACCGAGAGARCCTGCGGAWCSYGCKCS
+                GCTACTACAACCAGAGCGAGGCCGGGTCTCACAYYWKSCAGASGATGTATGGCTGCGACSTGGG
+                GCCSGACGGGCGCYTCCTCCGCGGGCATAACCAGTACGCCTACGACGGCAARGATTACATCGCC
+                CTGAACGAGGACCTGAGCTCCTGGACCGCGGCGGACACCGCGGCTCAGATCACCCAGCGCAAGT
+                GGGAGGCGGCCCGTGWGGCGGAGCAGCTGAGAGCCTACCTGGAGGGCCTGTGCGTGGAGTGGCT
+                CCGCAGAYACCTGGAGAACGGGAAGGAGACGCTGCAGCGCGCGGCGGGGATGAGGTATTTCTAC
+                ACCGCCATGTCCCGGCCCGGCCG
+          </amplification>
+        </sbt-sanger>
+        <sbt-sanger locus="HLA-B">
+          <amplification registered-name="L999.K1.V1.B280TTGG">
+                CCGCGGGCATAACCAGTACGCCTACGACGGCAAAGATTACATCGCCCTGGGACCTGAGCTCCTG
+                GACCGCGGCGGACACCGCGGCTCAGATCACCCAGCGCAAGTGGGAGGCGGCCCGTGAGGCGGAG
+                CAGCTGAGAGCCTACCTGGAGGGCCTGTGCGTGGAGTGGCTCCGCAGACACCTGGAGAACGGGA
+                AGGAGACGCTGCAGCGCGCGGAACGA
+          </amplification>
+          <gssp registered-name="L999.K1.V1.B280TTGG">
+            GGTCTCACACTTGGC
+          </gssp>
+        </sbt-sanger>
+        <sbt-sanger locus="HLA-C">
+          <amplification registered-name="L999.K1.V1.BW6244R">
+                GCTCCCACTCCATGAGGTATTTCTACACCGCCATGTCCCGGCCCGGCCGAGCCCCGCTTCATCG
+                CAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGCCGCGAGTCCGAGGAC
+                GGAGCCCCGGGCGCCATGGATAGAGCAGGAGGGGCCGGAGTATTGGGACCGGAACACACAGATC
+                TTCAAGACCAACACACGGGG
+          </amplification>
+          <gssp registered-name="L999.K1.V1.BW6244R">
+              GCGGCTACTACAACCAG
+          </gssp>
+        </sbt-sanger>
+        <sbt-sanger locus="HLA-C">
+          <amplification registered-name="L999.K1.V1.CGENERIC">
+                GCTCCCACTCC
+                AGCCCCGCTTCATCKCAGTGGGCTACGTGGACGACACGCAGTTCGTGCGGTTCGACAGCGACGC
+                CGCGAGTCCRAGAGGGGAGCCGCGGGMGCCGTGGGTGGAGCAGGAGGGGCCGGAGTATTGGGAC
+                CGGGAGACACAGAAGTACAAGCGCCAGGCACAGRCTGACCGAGTGARCCTGCGGAAMCTGCGCG
+                GCTACTACAACCAGAGCGAGGMCGGGTCTCACACCCTCCAGWGGATGTKTGGCTGCGACCTGGG
+                GCCSGACGGGCGCCTCCTCCGCGGGTATRACCAGTWCGCCTACGACGGCAAGGATTACATCGCC
+                CTGAACGAGGAYCTGCGCTCCTGGACCGCCGCGGACACSGCGGCTCAGATCACCCAGCGCAAGT
+                GGGAGGCGGCCCGTGAGGCGGAGCAGCGGAGAGCCTACCTGGAGGGCACGTGCGTGGAGTGGCT
+                CCGCAGATACCTGGAGAACGGGAAGGAGACGCTGCAGCGCGCGGCGGRGATGARGTATTTCTYC
+                ACATCCGTGTCCYGGCCYGGCCG
+          </amplification>
+        </sbt-sanger>
+        <sbt-sanger locus="HLA-C">
+          <amplification registered-name="L999.K1.V1.CE2239R">
+                GCTCCCACTCCATGAGGTATTTCTCCACATCCGTGTCCTGGCCCGGCCGAGCCCCGCTTCATCG
+                CAGTGGGCTACGTGGACGACACGCAGTTCGTGCGGTTCGACAGCGACGCCGCGAGTCCAAGAGG
+                GGAGCCGCGGGAGCCGTGGGTGGAGCAGGAGGGGCCGGAGTATTGGGACCGGGAGACACAGAAG
+                TACAAGCGCCAGGCACAGGCTGACCGACGGGG
+          </amplification>
+          <gssp registered-name="L999.K1.V1.CE2239R">
+            ACTGCGCGGCTACTAC
+          </gssp>
+        </sbt-sanger>
+        <sbt-sanger locus="HLA-C">
+          <amplification registered-name="L999.K1.V1.CW240F">
+                  AGCGAGGACGGGTCTCACACCCTCCAGAGGATG
+          </amplification>
+          <gssp registered-name="L999.K1.V1.CW240F">
+              GTGAACCTGCGGAAAC
+          </gssp>
+        </sbt-sanger>
+      </typing-method>
+    </typing>
+  </sample>
+</hml>
