@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Histoimmunogenetics Markup Language (HML)
+    Copyright (c) 2014 National Marrow Donor Program (NMDP)
+
+    This specification is free software; you can redistribute it and/or modify it
+    under the terms of the GNU Lesser General Public License as published
+    by the Free Software Foundation; either version 3 of the License, or (at
+    your option) any later version.
+
+    This specification is distributed in the hope that it will be useful, but WITHOUT
+    ANY WARRANTY; with out even the implied warranty of MERCHANTABILITY or
+    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public
+    License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with this specification;  if not, write to the Free Software Foundation,
+    Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA.
+
+    > http://www.gnu.org/licenses/lgpl.html
+
+-->
+
+<!-- NOTE: This is a brief example of a DRAFT version of HML in action. It is not intended to be an accurate genotyping result. -->
+
+<hml xmlns="http://schemas.nmdp.org/spec/hml/1.0.1" 
+     xmlns:hml="http://schemas.nmdp.org/spec/hml/1.0.1" 
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xsi:schemaLocation="http://schemas.nmdp.org/spec/hml/1.0.1  http://schemas.nmdp.org/spec/hml/1.0.1/hml-1.0.1.xsd"
+     project-name="LAB"
+     version="1.0.1">
+  <reporting-center reporting-center-id="789" reporting-center-context="NMDP" />
+  <sample id="120000089" center-code="123">
+    <collection-method>buccal swab</collection-method>
+    <typing gene-family="HLA" date="2014-10-31">
+      <allele-assignment date="2014-01-01" allele-db="IMGT/HLA" allele-version="3.14.0">
+        <!-- 
+          EITHER a single glstring element with a URI -OR- a single glstring 
+          element containing inline data are expected here.
+        -->
+  
+        <!-- glstring using inline data: -->
+        <glstring>
+          HLA-DRB1*04:11:01+HLA-DRB1*04:07:01/HLA-DRB1*04:92
+        </glstring>
+  
+        <!-- glstring using a URI reference: -->
+        <glstring uri="http://gl.immunogenomics.org/imgt-hla/3.14.0/genotype-list/e" />
+      </allele-assignment>
+
+      <typing-method>
+        <sbt-ngs locus="HLA-DRB1" test-id="GTR000000000.0" test-id-source="NCBI-GTR" />
+      </typing-method>
+
+      <consensus-sequence date="2014-11-02">
+        <reference-database name="imgt-hla" 
+              description="IMGT/HLA Database"
+              version="3.18.0"
+              availability="public"
+              curated="true"
+              uri="http://www.ebi.ac.uk/ipd/imgt/hla">
+            <reference-sequence id="ref1"
+                  name="HLA-A*01:01:01:01"
+                  start="0"
+                  end="3053"
+                  accession="HLA00001"
+                  uri="http://www.ebi.ac.uk/Tools/dbfetch/dbfetch?db=imgthla;id=HLA00001" />
+        </reference-database>
+
+        <consensus-sequence-block reference-sequence-id="ref1"
+            start="29942124"
+            end="29944020"
+            strand="1"
+            phase-set="1"
+            continuity="true"
+            expected-copy-number="1"
+            description="HLA-A exon 1">
+            <sequence>
+              TTTCTTGGAGCAGGTTAAACATGAGTGTCATTTCTTCAACGGGACGGAGCGGGTGCGGTTCCTGGACA
+              GATACTTCTATCACCAAGAGGAGTACGTGCGCTTCGACAGCGACGTGGGGGAGTACCGGGCGGTGACG
+              GAGCTGGGGCGGCCTAGCGCCGAGTACTGGAACAGCCAGAAGGACCTCCTGGAGCAGAGGCGGGCCGA
+              GGTGGACACCTACTGCAGACACAACTACGGGGTTGTGGAGAGCTTCACA
+            </sequence>
+
+            <!-- SNP -->
+            <variant reference-bases="T" alternate-bases="C" start="29942937" end="29943001" >
+                <variant-effect term="missense_variant" />
+            </variant>
+            <!-- deletion -->
+            <variant reference-bases="CG" alternate-bases="C" start="29942999" end="29943025" >
+                <variant-effect term="frameshift_variant" />
+            </variant>
+            <!-- insertion -->
+            <variant reference-bases="A" alternate-bases="AT" start="29942760" end="29942852" >
+                <variant-effect term="stop_gained" />
+            </variant>
+            <sequence-quality sequence-start="29942937" sequence-end="29943001" quality-score="1.0" />
+            <sequence-quality sequence-start="29942955" sequence-end="29943020" quality-score="1.0" />
+        </consensus-sequence-block>
+        <consensus-sequence-block reference-sequence-id="ref1"
+            start="32584109"
+            end="32584377"
+            strand="1"
+            phase-set="2"
+            continuity="true"
+            expected-copy-number="1"
+            description="HLA-B exon 1">
+            <sequence>
+              TTTCTTGGAGCAGGTTAAACATGAGTGTCATTTCTTCAACGGGACGGAGCGGGTGCGGTTCCTGGACA
+              GATACTTCTATCACCAAGAGGAGTACGTGCGCTTCGACAGCGACGTGGGGGAGTACCGGGCGGTGACG
+              GAGCTGGGGCGGCCTGATGCCGAGTACTGGAACAGCCAGAAGGACCTCCTGGAGCAGAGGCGGGCCGA
+              GGTGGACACCTACTGCAGACACAACTACGGGGTTGGTGAGAGCTTCACA
+            </sequence>
+            <sequence-quality sequence-start="32584109" sequence-end="32584377" quality-score="1.0" />
+        </consensus-sequence-block>
+        <consensus-sequence-block reference-sequence-id="ref1"
+            start="32584109"
+            end="32584377"
+            strand="1"
+            phase-set="3"
+            continuity="true"
+            expected-copy-number="1"
+            description="HLA-C exon 1">
+            <sequence>
+              TTTCTTGGAGCAGGTTAAACATGAGTGTCATTTCTTCAACGGGACGGAGCGGGTGCGGTTCCTGGACA
+              GATACTTCTATCACCAAGAGGAGTACGTGCGCTTCGACAGCGACGTGGGGGAGTACCGGGCGGTGACG
+              GAGCTGGGGCGGCCTAGCGCCGAGTACTGGAACAGCCAGAAGGACCTCCTGGAGCAGAGGCGGGCCGA
+              GGTGGACACCTACTGCAGACACAACTACGGGGTTGTGGAGAGCTTCACA
+            </sequence>
+            <!-- deletion -->
+            <variant reference-bases="CG" alternate-bases="C" start="32584109" end="32584377" >
+                <variant-effect term="frameshift_variant" />
+            </variant>
+        </consensus-sequence-block>
+        <consensus-sequence-block reference-sequence-id="ref1"
+            start="32584109"
+            end="32584377"
+            strand="1"
+            phase-set="4"
+            continuity="true"
+            expected-copy-number="1"
+            description="HLA-DRB1 exon 2">
+            <sequence>
+              TTTCTTGGAGCAGGTTAAACATGAGTGTCATTTCTTCAACGGGACGGAGCGGGTGCGGTTCCTGGACA
+              GATACTTCTATCACCAAGAGGAGTACGTGCGCTTCGACAGCGACGTGGGGGAGTACCGGGCGGTGACG
+              GAGCTGGGGCGGCCTGATGCCGAGTACTGGAACAGCCAGAAGGACCTCCTGGAGCAGAGGCGGGCCGA
+              GGTGGACACCTACTGCAGACACAACTACGGGGTTGGTGAGAGCTTCACA
+            </sequence>
+            <sequence-quality sequence-start="32584109" sequence-end="32584300" quality-score="1.0" />
+        </consensus-sequence-block>
+      </consensus-sequence>
+    </typing>
+  </sample>
+</hml>
